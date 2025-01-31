@@ -26,15 +26,15 @@ public class Upgrade : MonoBehaviour
     void CDReduce()
     {
         goldgold.gold -= 5;
-        turretscript.cooldown --;
-        turretscript2.cooldown --;
-        turretscript3.cooldown --;
+        turretscript.cooldown -= 0.5f;
+        turretscript2.cooldown -= 0.5f;
+        turretscript3.cooldown -= 0.5f;
     }
     
     void BulletSpeed()
     {
         goldgold.gold -= 5;
-        bullet.velocity += 10f;
+        bullet.velocity += 5f;
     }
 
     void SmallBase()
